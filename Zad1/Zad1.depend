@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1782828407 source:d:\study\zad1\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<algorithm>
+
