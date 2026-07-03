@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1783092564 source:d:\study\repository_folder\zad1 (zad3)\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<algorithm>
+	"histogram.h"
+
+1783092585 d:\study\repository_folder\zad1 (zad3)\histogram.h
+	<vector>
+	<iostream>
+	<algorithm>
+	<string>
+
+1783096562 source:d:\study\repository_folder\zad1 (zad3)\histogram.cpp
+	"histogram.h"
+	<vector>
+	<iostream>
+	<algorithm>
+	<string>
+

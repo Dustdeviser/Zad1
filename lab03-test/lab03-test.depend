@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1783096336 source:d:\study\repository_folder\lab03-test\test.cpp
+	"D:\Study\repository_folder\Zad1 (Zad3)\histogram.h"
+	<cassert>
+
+1783092585 d:\study\repository_folder\zad1 (zad3)\histogram.h
+	<vector>
+	<iostream>
+	<algorithm>
+	<string>
+
+1783096562 source:d:\study\repository_folder\zad1 (zad3)\histogram.cpp
+	"histogram.h"
+	<vector>
+	<iostream>
+	<algorithm>
+	<string>
+
+1783095828 source:d:\study\repository_folder\lab03-test\negative.cpp
+	"D:\Study\repository_folder\Zad1 (Zad3)\histogram.h"
+	<cassert>
+
