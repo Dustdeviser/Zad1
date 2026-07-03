@@ -94,6 +94,20 @@ void svg_rect(double x, double y, double width, double height,
          << "' stroke='" << stroke << "' fill='" << fill << "' />\n";
 }
 
+
+void svg_line(double x1, double y1, double x2, double y2,
+              string stroke = "grey", string stroke_dasharray = "")
+{
+    cout << "<line x1='" << x1 << "' y1='" << y1
+         << "' x2='" << x2 << "' y2='" << y2
+         << "' stroke='" << stroke << "'";
+    if (!stroke_dasharray.empty()) {
+        cout << " stroke-dasharray='" << stroke_dasharray << "'";
+    }
+
+    cout << " />\n";
+}
+
 void show_histogram_svg(const vector<size_t>& bins)
 {
     size_t bin_count = bins.size();
@@ -105,13 +119,21 @@ void show_histogram_svg(const vector<size_t>& bins)
     {
         cin >> labels[i];
     }
-size_t max_count = bins[0];
+
+    cerr << "Enter dash length and space length: ";
+    size_t dash_length, space_length;
+    cin >> dash_length >> space_length;
+
+    string stroke_dasharray = to_string(dash_length) + " " + to_string(space_length);
+
+    size_t max_count = bins[0];
     for (size_t count : bins)
     {
         if (count > max_count) {
             max_count = count;
         }
     }
+
     const auto IMAGE_WIDTH = 500;
     const auto IMAGE_HEIGHT = bin_count * 40;
     const auto TEXT_LEFT = 20;
@@ -133,6 +155,9 @@ size_t max_count = bins[0];
 
         svg_text(TEXT_LEFT, top + TEXT_BASELINE, labels[i]);
         svg_rect(TEXT_WIDTH, top + 4, bin_width, BIN_HEIGHT);
+
+        svg_line(0, top + 40, IMAGE_WIDTH, top + 40, "grey", stroke_dasharray);
+
         top += 40;
     }
     svg_end();

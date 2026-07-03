@@ -2,8 +2,11 @@
 <svg width='500' height='120' viewBox='0 0 500 120' xmlns='http://www.w3.org/2000/svg'>
 <text x='20' y='25'>aaaaaaaaaaaa</text>
 <rect x='120' y='4' width='32.4' height='24' stroke='black' fill='red' />
+<line x1='0' y1='40' x2='500' y2='40' stroke='grey' stroke-dasharray='140702348436445 861612799472' />
 <text x='20' y='65'>bbbb</text>
 <rect x='120' y='44' width='118.8' height='24' stroke='black' fill='red' />
+<line x1='0' y1='80' x2='500' y2='80' stroke='grey' stroke-dasharray='140702348436445 861612799472' />
 <text x='20' y='105'>wwwwwww</text>
 <rect x='120' y='84' width='360' height='24' stroke='black' fill='red' />
+<line x1='0' y1='120' x2='500' y2='120' stroke='grey' stroke-dasharray='140702348436445 861612799472' />
 </svg>
